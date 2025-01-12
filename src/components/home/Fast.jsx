@@ -4,7 +4,7 @@ const FastModellingSection = () => {
       {/* Left Section: Logo */}
       <div className="flex-shrink-0">
         <img
-          src="/img/fastlogo.PNG"
+          src="/img/fastlogo.png"
           alt="FAST Logo"
           className="h-12 w-50" // Adjust size as needed
         />
