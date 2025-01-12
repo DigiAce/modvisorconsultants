@@ -19,8 +19,10 @@ const Footer = () => {
                 </a>
               </div>
               <div className="max-w-md pr-16 text-md text-black font-medium">
-                Enhance productivity and efficiency with cutting-edge artificial
-                intelligence solutions for your business operations.
+                ModVisor (short for Modelling Advisor) is revolutionizing
+                financial modelling! As a forward-thinking start-up, we aim to
+                be your ultimate one-stop shop for all things spreadsheet,
+                transforming the way businesses work with data every day.
               </div>
               <div className="flex space-x-2">
                 <a
@@ -135,7 +137,7 @@ const Footer = () => {
                         href="tel:+1234567890"
                         className="hover:text-black font-bold"
                       >
-                        +1 234 567 890
+                        +91- 87504 05320
                       </a>
                     </li>
                     <li className="text-md leading-6 text-black font-semibold">
@@ -144,7 +146,7 @@ const Footer = () => {
                         href="mailto:info@example.com"
                         className="hover:text-[#ffc541]"
                       >
-                        info@example.com
+                        devasheesh.pant@modvisorbusinessconsultants.com
                       </a>
                     </li>
                   </ul>

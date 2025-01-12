@@ -12,9 +12,7 @@ const ContactSection = () => {
             Get In <span className="text-indigo-600">Touch</span>
           </h3>
           <p className="mt-4 leading-7 text-gray-200">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s.
+            Got Questions? Write To Us
           </p>
           <div className="flex items-center mt-5">
             <svg
@@ -38,7 +36,10 @@ const ContactSection = () => {
             >
               <path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 14.5L3.5 9l1.41-1.41L9 11.67l9.09-9.09L20.5 4.5 9 14.5z" />
             </svg>
-            <span className="text-sm">info@example.com</span>
+            <span className="text-sm overflow-hidden">
+              devasheesh.pant@modvisorbusiness <br />
+              consultants.com
+            </span>
           </div>
         </div>
         <div className="md:col-span-8 p-10 bg-white">

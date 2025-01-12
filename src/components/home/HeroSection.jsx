@@ -1,28 +1,33 @@
+import React from "react";
+import { FaTools, FaClipboardCheck, FaGraduationCap } from "react-icons/fa"; // Import relevant icons
+
 const HeroSection = () => {
-  // Data for the cards
   const cards = [
     {
+      icon: <FaTools size={24} />, // Add icon
       title: "Model Build",
       description:
         "We deliver custom, user-friendly models that simplify complex data, ensuring accuracy, flexibility, and actionable insights to drive confident decisions.",
-      link: "/model-build", // Link for navigation
+      link: "/model-build",
     },
     {
+      icon: <FaClipboardCheck size={24} />, // Add icon
       title: "Model Review",
       description:
         "We make financial models accurate, reliable, and easy to use - spotting errors, validating assumptions, and boosting functionality for smarter decisions.",
-      link: "/model-review", // Link for navigation
+      link: "/model-review",
     },
     {
+      icon: <FaGraduationCap size={24} />, // Add icon
       title: "Training",
       description:
         "ModVisor offers customized training for individuals and corporate teams, focusing on practical financial Modelling skills designed to meet your specific business needs.",
-      link: "/training", // Link for navigation
+      link: "/training",
     },
   ];
 
   return (
-    <div className="relative text-white flex flex-col items-center mb-26">
+    <div className="relative text-white flex flex-col items-center mb-26 bg-[#e0f4ff]">
       {/* Background Video */}
       <div className="relative w-full h-[80vh]">
         <video
@@ -41,7 +46,6 @@ const HeroSection = () => {
             Bespoke Financial Models, <br /> Because Your Business Deserves the
             Best.
           </h1>
-
           <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
             Start a conversation
           </button>
@@ -59,10 +63,15 @@ const HeroSection = () => {
               {/* Hover Effect Circle */}
               <div className="circle absolute h-[5em] w-[5em] -top-[2.5em] -right-[2.5em] rounded-full bg-navBarColor group-hover:scale-[1500%] duration-500"></div>
 
-              {/* Card Title */}
-              <h2 className="relative z-20 font-bold text-xl sm:text-3xl font-Poppins text-textColor group-hover:text-[#ffc541] duration-500">
-                {card.title}
-              </h2>
+              {/* Card Title with Icon */}
+              <div className="relative z-20 flex items-center space-x-3">
+                <span className="text-black group-hover:text-[#ffc541] transition duration-500">
+                  {card.icon}
+                </span>
+                <h2 className="font-bold text-xl sm:text-3xl font-Poppins text-textColor group-hover:text-[#ffc541] duration-500">
+                  {card.title}
+                </h2>
+              </div>
 
               {/* Card Description */}
               <p className="mt-2 text-[#000] text-md sm:text-xl group-hover:text-white transition-all group-hover:opacity-[0.8] duration-300">

@@ -45,7 +45,10 @@ const Features = () => {
             </h3>
             <div className="space-y-6">
               {industries.map((industry, index) => (
-                <div key={index} className="flex items-center gap-4">
+                <div
+                  key={index}
+                  className="flex items-center gap-4 p-4 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#ffc541] hover:text-black"
+                >
                   <div className="w-12 h-12 bg-blue-950 text-blue-600 rounded-md flex items-center justify-center text-2xl">
                     {industry.icon}
                   </div>
