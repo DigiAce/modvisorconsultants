@@ -39,7 +39,7 @@ const Features = () => {
       <div className="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-8">
         {/* List of Industries (40% width) */}
         <div className="md:w-2/5 w-full order-last sm:order-1">
-          <div className="bg-textColor text-white p-8 rounded-tl-[50px] rounded-tr-[50px] flex-1 text-center">
+          <div className="bg-textColor text-white p-8 rounded-tl-[50px] rounded-tr-[50px] flex-1 text-center overflow-hidden">
             <h3 className="text-2xl font-bold mb-6 text-[#ffc541]">
               Industries We’ve Worked With
             </h3>
@@ -47,7 +47,7 @@ const Features = () => {
               {industries.map((industry, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-4 p-4 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#ffc541] hover:text-black"
+                  className="flex items-center gap-4 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#ffc541] hover:text-black p-1"
                 >
                   <div className="w-12 h-12 bg-blue-950 text-blue-600 rounded-md flex items-center justify-center text-2xl">
                     {industry.icon}

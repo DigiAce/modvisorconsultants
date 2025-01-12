@@ -47,7 +47,9 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 flex flex-col gap-8">
         {/* Heading and Counters */}
         <div className="text-center lg:text-left mb-8">
-          <span className="block text-xl text-gray-500">About Us</span>
+          <span className="block text-2xl text-gray-500 font-extrabold">
+            About Us
+          </span>
           <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 mt-2">
             ModVisor: Crafting Financial Models That Drive Success!
           </h2>

@@ -1,24 +1,23 @@
-import React from "react";
-import { FaTools, FaClipboardCheck, FaGraduationCap } from "react-icons/fa"; // Import relevant icons
+// import { FaTools, FaClipboardCheck, FaGraduationCap } from "react-icons/fa"; // Import relevant icons
 
 const HeroSection = () => {
   const cards = [
     {
-      icon: <FaTools size={24} />, // Add icon
+      img: "/img/c1.png", // Replace with your image path
       title: "Model Build",
       description:
         "We deliver custom, user-friendly models that simplify complex data, ensuring accuracy, flexibility, and actionable insights to drive confident decisions.",
       link: "/model-build",
     },
     {
-      icon: <FaClipboardCheck size={24} />, // Add icon
+      img: "/img/c3.png", // Replace with your image path
       title: "Model Review",
       description:
         "We make financial models accurate, reliable, and easy to use - spotting errors, validating assumptions, and boosting functionality for smarter decisions.",
       link: "/model-review",
     },
     {
-      icon: <FaGraduationCap size={24} />, // Add icon
+      img: "/img/c2.png", // Replace with your image path
       title: "Training",
       description:
         "ModVisor offers customized training for individuals and corporate teams, focusing on practical financial Modelling skills designed to meet your specific business needs.",
@@ -58,16 +57,15 @@ const HeroSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="relative p-6 bg-white rounded-lg shadow-lg overflow-hidden group"
+              className="relative p-6 bg-white rounded-[50px] shadow-lg overflow-hidden group"
             >
               {/* Hover Effect Circle */}
               <div className="circle absolute h-[5em] w-[5em] -top-[2.5em] -right-[2.5em] rounded-full bg-navBarColor group-hover:scale-[1500%] duration-500"></div>
 
               {/* Card Title with Icon */}
               <div className="relative z-20 flex items-center space-x-3">
-                <span className="text-black group-hover:text-[#ffc541] transition duration-500">
-                  {card.icon}
-                </span>
+                <img src={card.img} alt={card.title} className="w-10 h-10" />{" "}
+                {/* Image */}
                 <h2 className="font-bold text-xl sm:text-3xl font-Poppins text-textColor group-hover:text-[#ffc541] duration-500">
                   {card.title}
                 </h2>
@@ -81,7 +79,7 @@ const HeroSection = () => {
               {/* Arrow Link */}
               <a
                 href={card.link}
-                className="relative z-20 mt-4 inline-block text-blue-500 group-hover:text-white transition duration-300"
+                className="relative z-20 mt-4 inline-block text-blue-500 group-hover:text-white transition duration-300 bg-[#ffc541] rounded-full p-1 ml-64"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

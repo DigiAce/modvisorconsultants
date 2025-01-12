@@ -24,7 +24,8 @@ const ContactSection = () => {
               <path d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3 12H7v-2h6v2z" />
             </svg>
             <span className="text-sm">
-              House #14, Street #12, Darulaman Road, Kabul, Afghanistan.
+              Manas Mandir, Cantt. Road, Pithoragarh, Uttarakhand –
+              262501, India
             </span>
           </div>
           <div className="flex items-center mt-5">

@@ -16,7 +16,7 @@ export function AppleCardsCarouselDemo() {
 
   return (
     <div className="w-full h-full py-12">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-textColor font-sans">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-textColor font-sans text-center">
         Why ModVisor is Your Go-To Partner for Business Success!
       </h2>
       <Carousel items={cards} />

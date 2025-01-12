@@ -66,7 +66,7 @@ const Footer = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-md font-extrabold leading-6 text-textColor text-xl">
-                    Our Solutions
+                    Our Services
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     <li>
@@ -74,7 +74,7 @@ const Footer = () => {
                         href="#"
                         className="text-md font-bold leading-6 text-black hover:text-[#ffc541]"
                       >
-                        Model Bulild
+                        Model Build
                       </a>
                     </li>
                     <li>
