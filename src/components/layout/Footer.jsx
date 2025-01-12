@@ -160,7 +160,7 @@ const Footer = () => {
             <div className="text-md text-center text-black">
               © 2025 <span className="font-semibold">ModVisor</span> . All
               rights reserved. Powered by
-              <a rel="noopener" href="/" className="font-extrabold">
+              <a rel="noopener" href="https://digiace.in/" className="font-extrabold">
                 {" "}
                 DigiAce
               </a>
