@@ -33,12 +33,13 @@ const HeroSection = () => {
         >
           <source src="/img/bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-75"></div>
 
         {/* Heading Section */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center h-full">
           <h1 className="text-3xl sm:text-5xl font-bold mb-6">
-            Bespoke Financial Models, Because Your Business Deserves the Best.
+            Bespoke Financial Models, <br /> Because Your Business Deserves the
+            Best.
           </h1>
 
           <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">

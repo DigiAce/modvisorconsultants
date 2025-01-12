@@ -87,37 +87,37 @@ const data = [
   {
     icon: <FaApple className="text-4xl text-neutral-700" />,
     title: "Tailored Financial Models",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/img/1.jpg",
     content: content["Tailored Financial Models"],
   },
   {
     icon: <FaProductHunt className="text-4xl text-neutral-700" />,
     title: "Seasoned Professionals",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/img/2.jpg",
     content: content["Seasoned Professionals"],
   },
   {
     icon: <FaChartLine className="text-4xl text-neutral-700" />,
     title: "Quality Meets Affordability",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/img/3.jpg",
     content: content["Quality Meets Affordability"],
   },
   {
     icon: <FaUsers className="text-4xl text-neutral-700" />,
     title: "Clear and Actionable Insights",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/img/4.jpg",
     content: content["Clear and Actionable Insights"],
   },
   {
     icon: <FaLaptop className="text-4xl text-neutral-700" />,
     title: "Long-Term Partnerships",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/img/5.jpg",
     content: content["Long-Term Partnerships"],
   },
   {
     icon: <FaApple className="text-4xl text-neutral-700" />,
     title: "Future-Ready Solutions",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/img/6.jpg",
     content: content["Future-Ready Solutions"],
   },
 ];

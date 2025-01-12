@@ -116,7 +116,7 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
             ))}
           </div>
         </div>
-        <div className="flex justify-end gap-2 mr-10">
+        <div className="absolute top-0 w-full flex justify-end  items-start gap-2 mr-10 mb-2 d-none sm:d-block">
           <button
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
@@ -215,7 +215,7 @@ export const Card = ({ card, index, layout = false }) => {
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">
