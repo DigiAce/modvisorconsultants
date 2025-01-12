@@ -146,7 +146,8 @@ const Footer = () => {
                         href="mailto:info@example.com"
                         className="hover:text-[#ffc541]"
                       >
-                        devasheesh.pant@modvisorbusinessconsultants.com
+                        devasheesh.pant@modvisorbusiness <br />
+                        consultants.com
                       </a>
                     </li>
                   </ul>

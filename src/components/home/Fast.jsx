@@ -1,6 +1,6 @@
 const FastModellingSection = () => {
   return (
-    <section className="bg-blue-900 text-white p-8 rounded-[30px] max-w-7xl h-72 mx-auto flex flex-col sm:flex-row items-center gap-8 relative z-10 top-12 mb-20 sm:mb-0">
+    <section className="bg-blue-900 text-white p-8 rounded-[30px] max-w-7xl h-auto sm:h-72 mx-auto flex flex-col sm:flex-row items-center gap-8 relative z-10 top-12 mb-20 sm:mb-0 overflow-hidden">
       {/* Left Section: Logo */}
       <div className="flex-shrink-0">
         <img
@@ -14,7 +14,7 @@ const FastModellingSection = () => {
       <div className="hidden sm:block border-l border-gray-300 h-32"></div>
 
       {/* Right Section: Content */}
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center ">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
           FAST Modelling Standard Signatory
         </h2>
