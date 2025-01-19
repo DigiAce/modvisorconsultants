@@ -43,54 +43,58 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div className="bg-[#e0f4ff]">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 flex flex-col gap-8">
-        {/* Heading and Counters */}
-        <div className="text-center lg:text-left mb-8">
-          <span className="block text-2xl text-gray-500 font-extrabold">
-            About Us
-          </span>
-          <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 mt-2">
-            ModVisor: Crafting Financial Models That Drive Success!
-          </h2>
-          {/* <div className="flex justify-center lg:justify-start space-x-8 mt-4 text-m sm:text-xl font-semibold text-textColor">
+    <section id="about-section">
+      <div className="bg-[#e0f4ff]">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 flex flex-col gap-8">
+          {/* Heading and Counters */}
+          <div className="text-center lg:text-left mb-8">
+            <span className="block text-2xl text-gray-500 font-extrabold">
+              About Us
+            </span>
+            <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 mt-2">
+              ModVisor: Crafting Financial Models That Drive Success!
+            </h2>
+            {/* <div className="flex justify-center lg:justify-start space-x-8 mt-4 text-m sm:text-xl font-semibold text-textColor">
           <span>{clients.toLocaleString()}+ Deal with Clients</span>
           <span>{team.toLocaleString()}+ Team Members</span>
           <span>{projects.toLocaleString()}+ Completed Project</span>
         </div> */}
-        </div>
-
-        {/* Left Side - Image */}
-        <div className="flex flex-col lg:flex-row gap-8">
-          <div className="lg:w-6/12">
-            <img
-              src="/img/aboutus.jpg"
-              alt="About Us Image"
-              className="w-full h-full object-cover rounded-[50px] shadow-lg"
-            />
           </div>
 
-          {/* Right Side - Combined Card */}
-          <div className="lg:w-6/12 space-y-8">
-            <div
-              className={`p-6 rounded-[50px] shadow-lg ${cards[0].bgColor} ${cards[1].bgColor}`}
-            >
-              <p className="text-white font-medium">{cards[0].description}</p>
-              <p className="text-white font-medium">{cards[1].description}</p>
+          {/* Left Side - Image */}
+          <div className="flex flex-col lg:flex-row gap-8">
+            <div className="lg:w-6/12">
+              <img
+                src="/img/aboutus.jpg"
+                alt="About Us Image"
+                className="w-full h-full object-cover rounded-[50px] shadow-lg"
+              />
             </div>
-            <div className={`p-6 rounded-[50px] shadow-lg ${cards[2].bgColor}`}>
-              <h3 className="text-xl font-bold mb-2">{cards[2].title}</h3>
-              <p className="text-gray-600 font-medium">
-                {cards[2].description}
-              </p>
-              {/* <button className="mt-4 px-4 py-2 bg-[#ffc541] text-black font-semibold rounded shadow hover:bg-blue-700">
+
+            {/* Right Side - Combined Card */}
+            <div className="lg:w-6/12 space-y-8">
+              <div
+                className={`p-6 rounded-[50px] shadow-lg ${cards[0].bgColor} ${cards[1].bgColor}`}
+              >
+                <p className="text-white font-medium">{cards[0].description}</p>
+                <p className="text-white font-medium">{cards[1].description}</p>
+              </div>
+              <div
+                className={`p-6 rounded-[50px] shadow-lg ${cards[2].bgColor}`}
+              >
+                <h3 className="text-xl font-bold mb-2">{cards[2].title}</h3>
+                <p className="text-gray-600 font-medium">
+                  {cards[2].description}
+                </p>
+                {/* <button className="mt-4 px-4 py-2 bg-[#ffc541] text-black font-semibold rounded shadow hover:bg-blue-700">
                 Read More
               </button> */}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

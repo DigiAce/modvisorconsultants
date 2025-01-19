@@ -1,4 +1,6 @@
 import React from "react";
+import { HiLocationMarker } from "react-icons/hi";
+import { MdEmail } from "react-icons/md";
 
 const ContactSection = () => {
   return (
@@ -9,36 +11,24 @@ const ContactSection = () => {
             Contact
           </p>
           <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
-            Get In <span className="text-indigo-600">Touch</span>
+            Get In <span className="text-textColor">Touch</span>
           </h3>
           <p className="mt-4 leading-7 text-gray-200">
             Got Questions? Write To Us
           </p>
+
           <div className="flex items-center mt-5">
-            <svg
-              className="h-6 mr-3 text-indigo-600"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3 12H7v-2h6v2z" />
-            </svg>
+            <HiLocationMarker className="h-12 mr-3 text-[#ffc541]" />
             <span className="text-sm">
-              Manas Mandir, Cantt. Road, Pithoragarh, Uttarakhand –
-              262501, India
+              Manas Mandir, Cantt. Road, Pithoragarh, Uttarakhand – 262501,
+              India
             </span>
           </div>
           <div className="flex items-center mt-5">
-            <svg
-              className="h-6 mr-3 text-indigo-600"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 14.5L3.5 9l1.41-1.41L9 11.67l9.09-9.09L20.5 4.5 9 14.5z" />
-            </svg>
-            <span className="text-sm overflow-hidden">
-              devasheesh.pant@modvisorbusiness <br />
+            <MdEmail className="h-12 w-12 mr-3 text-[#ffc541]" />
+            <span className="text-sm">
+              devasheesh.pant@modvisorbusiness
+              <br />
               consultants.com
             </span>
           </div>
@@ -108,7 +98,7 @@ const ContactSection = () => {
             <div>
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="w-full bg-textColor text-white py-2 px-4 rounded-md shadow hover:bg-textColor focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Submit
               </button>

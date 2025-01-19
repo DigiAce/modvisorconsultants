@@ -29,7 +29,7 @@ const content = {
   "Tailored Financial Models": (
     <div>
       {/* <h3 className="text-lg font-bold">Tailored Financial Models</h3> */}
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans">
+      <p className="text-white text-base md:text-2xl font-sans">
         Every solution is customized to meet your business&apos;s specific needs
         and objectives.
       </p>
@@ -38,7 +38,7 @@ const content = {
   "Seasoned Professionals": (
     <div>
       {/* <h3 className="text-lg font-bold">Seasoned Professionals</h3> */}
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans">
+      <p className="text-white text-base md:text-2xl font-sans">
         Our team brings years of specialized experience to deliver accurate,
         customized financial models.
       </p>
@@ -47,7 +47,7 @@ const content = {
   "Quality Meets Affordability": (
     <div>
       {/* <h3 className="text-lg font-bold">Quality Meets Affordability</h3> */}
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans">
+      <p className="text-white text-base md:text-2xl font-sans">
         We deliver high-quality financial models at unbeatable prices - making
         premium results accessible without the premium price tag.
       </p>
@@ -56,7 +56,7 @@ const content = {
   "Clear and Actionable Insights": (
     <div>
       {/* <h3 className="text-lg font-bold">Clear and Actionable Insights</h3> */}
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans">
+      <p className="text-white text-base md:text-2xl font-sans">
         We make complex data easy to understand, helping you make confident
         decisions.
       </p>
@@ -65,7 +65,7 @@ const content = {
   "Long-Term Partnerships": (
     <div>
       {/* <h3 className="text-lg font-bold">Long-Term Partnerships</h3> */}
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans">
+      <p className="text-white text-base md:text-2xl font-sans">
         We build lasting relationships, focused on your continued growth and
         success.
       </p>
@@ -74,7 +74,7 @@ const content = {
   "Future-Ready Solutions": (
     <div>
       {/* <h3 className="text-lg font-bold">Future-Ready Solutions</h3> */}
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans">
+      <p className="text-white text-base md:text-2xl font-sans">
         Our models are designed to drive growth and adapt as your business
         evolves.
       </p>
@@ -87,7 +87,7 @@ const data = [
   {
     icon: <FaApple className="text-4xl text-neutral-700" />,
     title: "Tailored Financial Models",
-    src: "/img/1.jpg",
+    src: "/img/11.jpg",
     content: content["Tailored Financial Models"],
   },
   {
@@ -117,7 +117,7 @@ const data = [
   {
     icon: <FaApple className="text-4xl text-neutral-700" />,
     title: "Future-Ready Solutions",
-    src: "/img/6.jpg",
+    src: "/img/66.jpg",
     content: content["Future-Ready Solutions"],
   },
 ];

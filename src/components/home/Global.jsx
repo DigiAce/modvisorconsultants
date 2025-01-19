@@ -17,7 +17,7 @@ const Global = () => {
         <p className="text-lg sm:text-2xl leading-relaxed">
           Our team brings expertise from around the world — serving clients in
           the{" "}
-          <span>
+          <span className="text-[#ffc541] font-bold">
             United Kingdom, Australia, Singapore, India, the United States, the
             Middle East, and South Africa.
           </span>{" "}
