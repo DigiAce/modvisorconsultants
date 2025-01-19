@@ -7,21 +7,21 @@ const HeroSection = () => {
       title: "Model Build",
       description:
         "We deliver custom, user-friendly models that simplify complex data, ensuring accuracy, flexibility, and actionable insights to drive confident decisions.",
-      link: "/services/modelbuild",
+      link: "services/modelbuild",
     },
     {
       img: "/img/c2.png", // Replace with your image path
       title: "Model Review",
       description:
         "We make financial models accurate, reliable, and easy to use - spotting errors, validating assumptions, and boosting functionality for smarter decisions.",
-      link: "/services/modelreview",
+      link: "services/modelreview",
     },
     {
       img: "/img/c3.png", // Replace with your image path
       title: "Training",
       description:
         "ModVisor offers customized training for individuals and corporate teams, focusing on Excel and practical Financial Modelling skills designed to meet your specific business needs.",
-      link: "/services/training",
+      link: "services/training",
     },
   ];
 
