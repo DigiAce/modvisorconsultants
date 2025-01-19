@@ -2,7 +2,7 @@
 const FloatingButton = () => {
   return (
     <a
-      href="#"
+      href="https://wa.link/kjjqfl"
       target="_blank"
       rel="noreferrer noopener"
       className="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#25d366]"
