@@ -12,10 +12,10 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     {
       name: "About",
-      // action: () =>
-      //   document
-      //     .getElementById("about-section")
-      //     .scrollIntoView({ behavior: "smooth" }),
+      action: () =>
+        document
+          .getElementById("about-section")
+          .scrollIntoView({ behavior: "smooth" }),
     },
     {
       name: "Our services",
