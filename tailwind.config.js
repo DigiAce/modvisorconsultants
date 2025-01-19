@@ -13,6 +13,7 @@ export default {
         dark: "#1e1e1e",
         navBarColor: "#173996",
         textColor:"#173996",
+        yell:"#ffc541",
         pink: "#f472b6",
       },
       fontFamily: {
