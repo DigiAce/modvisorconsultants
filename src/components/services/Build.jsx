@@ -22,55 +22,46 @@ export const projects = [
     title: "Project Finance ",
     description:
       "We create robust models for project finance and public-private partnerships across sectors like renewable energy, infrastructure, power, and telecom, helping you assess bids, forecast cash flow, and manage operational assets.",
-    link: "https://stripe.com",
   },
   {
     title: "Transaction (M&A, LBO, IPO) ",
     description:
       "Our models assist in evaluating financial viability and potential outcomes for transactions, including mergers, leveraged buyouts, and IPOs.",
-    link: "https://netflix.com",
   },
   {
     title: "Corporate Reporting, Budgeting & Forecasting",
     description:
       "We streamline budgeting, forecasting, and reporting processes, providing you with clear insights for strategic decision-making.",
-    link: "https://google.com",
   },
   {
     title: "Pricing Models",
     description:
       "Our custom pricing models ensure that your pricing strategies are competitive, profitable, and aligned with market demands.",
-    link: "https://meta.com",
   },
   {
     title: "Cost Benefit Analysis Models",
     description:
       "Our models evaluate the financial viability of projects by comparing costs against expected benefits to ensure profitable outcomes.",
-    link: "https://amazon.com",
   },
 
   {
     title: "Portfolio Consolidation",
     description:
       "Our models simplify portfolio consolidation, enabling you to monitor and manage assets effectively across different projects or business units.",
-    link: "https://microsoft.com",
   },
   {
     title: "Valuation Models",
     description:
       "Accurate valuations supporting mergers, acquisitions, and investments across industries like oil & gas, clean energy, and telecom.",
-    link: "https://microsoft.com",
   },
   {
     title: "Feasibility Models",
     description:
       "We design feasibility models to assess project viability, helping you evaluate risks, returns, and project success potential.",
-    link: "https://microsoft.com",
   },
   {
     title: "Depot Modelling for Train Infrastructure",
     description:
       "We specialize in not just financial Modelling but also technical Modelling, such as depot Modelling. Our approach combines in-depth analysis with practical recommendations, helping clients optimize operations, improve efficiency, and justify investment decisions.",
-    link: "https://microsoft.com",
   },
 ];
