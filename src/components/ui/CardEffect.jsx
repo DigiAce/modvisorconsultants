@@ -18,8 +18,8 @@ export const HoverEffect = ({ items, className }) => {
           key={item?.link}
           className={cn(
             "relative group block p-2 h-full w-full",
-            // Center the fourth card when there are exactly four cards
-            items.length === 4 && idx === 3
+            // Center the fourth card if there are exactly four items, or the tenth card otherwise
+            (items.length === 4 && idx === 3) || idx === 9
               ? "md:col-span-3 md:justify-self-center"
               : ""
           )}
@@ -29,7 +29,7 @@ export const HoverEffect = ({ items, className }) => {
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{

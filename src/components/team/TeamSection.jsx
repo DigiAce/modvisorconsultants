@@ -8,7 +8,7 @@ const teamData = [
       "Mr. Devasheesh Pant is a seasoned financial modeling professional with nearly 14 years of experience. He has led and reviewed complex financial models across industries such as Infrastructure, Transport, Oil & Gas, Renewables, Mini Grid, and BESS.\n\nAs the founder of ModVisor Business Consultants, Devasheesh specializes in Project Finance, Corporate Reporting, Budgeting, and advanced Technical Models like Depot Modeling. His deep analytical acumen ensures accurate and actionable insights, empowering businesses and entrepreneurs to achieve their financial goals with confidence.",
   },
   {
-    imgSrc: "/img/team/2.jpg", // Replace with actual image path
+    imgSrc: "/img/team/2.png", // Replace with actual image path
     name: "Dr. Ashok Kumar Pant",
     title: "Director",
     description:
@@ -22,21 +22,21 @@ const teamData = [
       "Mrs. Kanchan Lata Pant, a dynamic professional and co-founder of Modvisor Business Consultants, brings a wealth of experience in talent acquisition and organizational development. She is a key player in identifying and recruiting top-tier talent, shaping organizational culture, and ensuring the success of Modvisor's clients.",
   },
   {
-    imgSrc: "/img/team/6.png", // Replace with actual image path
+    imgSrc: "/img/team/4.png", // Replace with actual image path
     name: "Mrs. Akanksha Pant",
     title: "Director",
     description:
       "Mrs. Akanksha Pant, a seasoned technology professional and co-founder of Modvisor Business Consultants, is committed to driving innovation and digital transformation. With over a decade of corporate experience, she plays a pivotal role in keeping Modvisor at the forefront of technological advancements and ensuring the company's continued success.",
   },
   {
-    imgSrc: "/img/team/5.jpg", // Replace with actual image path
+    imgSrc: "/img/team/5.png", // Replace with actual image path
     name: "Mr. Mouleesh K",
     title: "Financial Analyst",
     description:
       "Mr. Mouleesh K holds an MBA degree in Finance, with strong analytical and financial modeling skills, and is currently a Financial Analyst at ModVisor. He specializes in building and reviewing complex financial models, ensuring their accuracy and reliability. Additionally, Mouleesh has a talent for transforming raw data into visually appealing dashboards, making financial insights both engaging and easy to understand.",
   },
   {
-    imgSrc: "/img/team/7.jpg", // Replace with actual image path
+    imgSrc: "/img/team/6.png", // Replace with actual image path
     name: "Mr. Hem Pandey",
     title: "Manager Accounts",
     description:

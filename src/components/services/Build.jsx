@@ -43,6 +43,11 @@ export const projects = [
     description:
       "Our models evaluate the financial viability of projects by comparing costs against expected benefits to ensure profitable outcomes.",
   },
+  {
+    title: "Fund Models",
+    description:
+      "Tailored fund models that track performance, investment strategies, and ensure accurate financial forecasting for your fund's success.",
+  },
 
   {
     title: "Portfolio Consolidation",

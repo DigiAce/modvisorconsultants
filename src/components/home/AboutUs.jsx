@@ -43,7 +43,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section id="about-section">
+    <section id="about">
       <div className="bg-[#e0f4ff]">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 flex flex-col gap-8">
           {/* Heading and Counters */}

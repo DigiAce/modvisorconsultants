@@ -4,21 +4,21 @@ import { MdEmail } from "react-icons/md";
 
 const ContactSection = () => {
   return (
-    <div className="max-w-screen-lg mx-auto p-5">
+    <div className="max-w-screen-lg mx-auto p-5" id="contact">
       <div className="grid grid-cols-1 md:grid-cols-12 border">
         <div className="bg-gray-900 md:col-span-4 p-10 text-white">
           <p className="mt-4 text-sm leading-7 font-semibold uppercase">
             Contact
           </p>
           <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
-            Get In <span className="text-textColor">Touch</span>
+            Get In <span className="text-yell">Touch</span>
           </h3>
           <p className="mt-4 leading-7 text-gray-200">
             Got Questions? Write To Us
           </p>
 
           <div className="flex items-center mt-5">
-            <HiLocationMarker className="h-12 mr-3 text-[#ffc541]" />
+            <HiLocationMarker className="h-12 w-12 mr-3 text-[#ffc541]" />
             <span className="text-sm">
               Manas Mandir, Cantt. Road, Pithoragarh, Uttarakhand – 262501,
               India
@@ -26,10 +26,9 @@ const ContactSection = () => {
           </div>
           <div className="flex items-center mt-5">
             <MdEmail className="h-12 w-12 mr-3 text-[#ffc541]" />
-            <span className="text-sm">
-              devasheesh.pant@modvisorbusiness
-              <br />
-              consultants.com
+            <span className="text-sm sm:text-xs">
+              devasheesh.pant <br />
+              @modvisorbusinessconsultants.com
             </span>
           </div>
         </div>
@@ -98,7 +97,7 @@ const ContactSection = () => {
             <div>
               <button
                 type="submit"
-                className="w-full bg-textColor text-white py-2 px-4 rounded-md shadow hover:bg-textColor focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="w-full bg-yell text-black font-bold py-2 px-4 rounded-md shadow hover:bg-textColor hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Submit
               </button>

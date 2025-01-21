@@ -8,14 +8,19 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate(); // React Router's navigation hook
 
+  const handleScrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false);
+    }
+  };
+
   const menuItems = [
     { name: "Home", path: "/" },
     {
       name: "About",
-      action: () =>
-        document
-          .getElementById("about-section")
-          .scrollIntoView({ behavior: "smooth" }),
+      action: () => handleScrollToSection("about"),
     },
     {
       name: "Our services",
@@ -42,7 +47,7 @@ const Navbar = () => {
     setIsMenuOpen(false); // Close the mobile menu
     setIsServicesOpen(false); // Close the dropdown
     if (typeof actionOrPath === "function") {
-      actionOrPath(); // Call the scroll action for About
+      actionOrPath(); // Call the scroll action
     } else {
       navigate(actionOrPath); // Navigate to other pages
       window.scrollTo(0, 0); // Scroll to the top
@@ -64,8 +69,8 @@ const Navbar = () => {
             alt="Company Logo"
             className="h-8 sm:h-12"
           />
-          <div className="hidden lg:block">
-            <ul className="flex space-x-10 text-base font-bold">
+          <div className="hidden lg:flex justify-between items-center w-full">
+            <ul className="flex-1 flex justify-center space-x-10 text-base font-bold">
               {menuItems.map((item) =>
                 item.subMenu ? (
                   <li key={item.name} className="relative">
@@ -106,6 +111,14 @@ const Navbar = () => {
                 )
               )}
             </ul>
+            <div className="ml-4">
+              <button
+                onClick={() => handleScrollToSection("contact")}
+                className="px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-yell hover:text-black"
+              >
+                Get in Touch
+              </button>
+            </div>
           </div>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -116,13 +129,13 @@ const Navbar = () => {
         </div>
         {isMenuOpen && (
           <div className="mt-4 bg-white text-black shadow-lg p-4 rounded-md">
-            <ul className="flex flex-col space-y-4 text-center">
+            <ul className="flex flex-col items-center space-y-4 text-center">
               {menuItems.map((item) =>
                 item.subMenu ? (
-                  <li key={item.name}>
+                  <li key={item.name} className="w-full">
                     <button
                       onClick={() => setIsServicesOpen(!isServicesOpen)}
-                      className="flex items-center space-x-2 w-full text-left hover:underline"
+                      className="flex items-center justify-center space-x-2 w-full text-center hover:underline"
                     >
                       <span>{item.name}</span>
                       {isServicesOpen ? (
@@ -137,7 +150,7 @@ const Navbar = () => {
                           <li key={sub.name}>
                             <button
                               onClick={() => handleNavigation(sub.path)}
-                              className="w-full text-left hover:underline"
+                              className="block w-full text-center hover:underline"
                             >
                               {sub.name}
                             </button>
@@ -147,10 +160,10 @@ const Navbar = () => {
                     )}
                   </li>
                 ) : (
-                  <li key={item.name}>
+                  <li key={item.name} className="w-full">
                     <button
                       onClick={() => handleNavigation(item.action || item.path)}
-                      className="hover:underline"
+                      className="w-full text-center hover:underline"
                     >
                       {item.name}
                     </button>
@@ -158,6 +171,14 @@ const Navbar = () => {
                 )
               )}
             </ul>
+            <div className="mt-6 flex justify-center">
+              <button
+                onClick={() => handleScrollToSection("contact")}
+                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+              >
+                Get in Touch
+              </button>
+            </div>
           </div>
         )}
       </nav>
