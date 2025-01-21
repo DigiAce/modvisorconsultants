@@ -11,21 +11,21 @@ export const projects = [
   {
     title: "Logical Review of Financial Models",
     description:
-      "We create robust models for project finance and public-private partnerships across sectors like renewable energy, infrastructure, power, and telecom, helping you assess bids, forecast cash flow, and manage operational assets.",
+      "We meticulously analyze your model for technical accuracy, logical flow, and adherence to industry best practices, ensuring every calculation stands up to scrutiny.",
   },
   {
     title: "PPA and Lender Document Compliance",
     description:
-      "Our models assist in evaluating financial viability and potential outcomes for transactions, including mergers, leveraged buyouts, and IPOs.",
+      "Our team reviews your model against Power Purchase Agreements (PPAs) and lender documents, ensuring compliance and consistency with contractual obligations.",
   },
   {
     title: "Adherence to FAST Standards",
     description:
-      "We streamline budgeting, forecasting, and reporting processes, providing you with clear insights for strategic decision-making.",
+      "We build and review models with strict adherence to FAST standards, promoting clarity, flexibility, and sustainability.",
   },
   {
     title: "Optimization & Enhancement",
     description:
-      "Our custom pricing models ensure that your pricing strategies are competitive, profitable, and aligned with market demands.",
+      "Post-review, our experts refine your model with precision, introducing tailored functionalities and adjustments to align perfectly with your needs.",
   },
 ];

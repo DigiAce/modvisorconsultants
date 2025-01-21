@@ -11,21 +11,21 @@ export const projects = [
   {
     title: "Personalized Training",
     description:
-      "We create robust models for project finance and public-private partnerships across sectors like renewable energy, infrastructure, power, and telecom, helping you assess bids, forecast cash flow, and manage operational assets.",
+      "Our 1-on-1 sessions provide focused, individualized learning. We customize each lesson to match your pace and specific financial modelling needs.",
   },
   {
     title: "Corporate Team Training",
     description:
-      "Our models assist in evaluating financial viability and potential outcomes for transactions, including mergers, leveraged buyouts, and IPOs.",
+      "We offer customized workshops for corporate teams to enhance collective modelling skills. Our hands-on approach promotes collaboration and effective problem-solving within teams.",
   },
   {
     title: "Online Flexibility",
     description:
-      "We streamline budgeting, forecasting, and reporting processes, providing you with clear insights for strategic decision-making.",
+      "Access training remotely through live, interactive online sessions. Learn from anywhere at your convenience, all while engaging with expert trainers.",
   },
   {
     title: "Onsite Training",
     description:
-      "Our custom pricing models ensure that your pricing strategies are competitive, profitable, and aligned with market demands.",
+      "We bring the training to you with immersive onsite sessions. This allows for direct interaction with trainers, helping address real-time challenges within your organization.",
   },
 ];
