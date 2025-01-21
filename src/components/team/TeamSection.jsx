@@ -22,14 +22,14 @@ const teamData = [
       "Mrs. Kanchan Lata Pant, a dynamic professional and co-founder of Modvisor Business Consultants, brings a wealth of experience in talent acquisition and organizational development. She is a key player in identifying and recruiting top-tier talent, shaping organizational culture, and ensuring the success of Modvisor's clients.",
   },
   {
-    imgSrc: "/img/team/4.png", // Replace with actual image path
+    imgSrc: "/img/team/5.png", // Replace with actual image path
     name: "Mrs. Akanksha Pant",
     title: "Director",
     description:
       "Mrs. Akanksha Pant, a seasoned technology professional and co-founder of Modvisor Business Consultants, is committed to driving innovation and digital transformation. With over a decade of corporate experience, she plays a pivotal role in keeping Modvisor at the forefront of technological advancements and ensuring the company's continued success.",
   },
   {
-    imgSrc: "/img/team/5.png", // Replace with actual image path
+    imgSrc: "/img/team/4.png", // Replace with actual image path
     name: "Mr. Mouleesh K",
     title: "Financial Analyst",
     description:
