@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi"; // Import icons
 
 const Navbar = () => {
@@ -7,6 +7,7 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false); // Dropdown for "Our services"
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate(); // React Router's navigation hook
+  const location = useLocation(); // Get the current location
 
   const handleScrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -16,11 +17,29 @@ const Navbar = () => {
     }
   };
 
+  const handleNavigationWithScroll = (path, sectionId) => {
+    if (location.pathname === path) {
+      // If already on the target page, scroll directly
+      handleScrollToSection(sectionId);
+    } else {
+      // Navigate to the target page and include sectionId in state
+      navigate(path, { state: { sectionId } });
+    }
+  };
+
+  useEffect(() => {
+    // On route change, check if a sectionId is in the location state
+    if (location.state?.sectionId) {
+      handleScrollToSection(location.state.sectionId);
+    }
+  }, [location]);
+
   const menuItems = [
     { name: "Home", path: "/" },
     {
       name: "About",
-      action: () => handleScrollToSection("about"),
+      path: "/",
+      action: () => handleNavigationWithScroll("/", "about"),
     },
     {
       name: "Our services",
@@ -33,6 +52,7 @@ const Navbar = () => {
     },
     { name: "Our Team", path: "/team" },
     { name: "Blog", path: "/blog" },
+    { name: "Join Us", path: "/join" },
   ];
 
   useEffect(() => {
@@ -113,8 +133,8 @@ const Navbar = () => {
             </ul>
             <div className="ml-4">
               <button
-                onClick={() => handleScrollToSection("contact")}
-                className="px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-yell hover:text-black"
+                onClick={() => handleNavigationWithScroll("/", "contact")}
+                className="px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600"
               >
                 Get in Touch
               </button>
@@ -173,7 +193,7 @@ const Navbar = () => {
             </ul>
             <div className="mt-6 flex justify-center">
               <button
-                onClick={() => handleScrollToSection("contact")}
+                onClick={() => handleNavigationWithScroll("/", "contact")}
                 className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
               >
                 Get in Touch

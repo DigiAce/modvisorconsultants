@@ -9,7 +9,7 @@ const Training = () => {
       <HeroSection
         id="about"
         title="Training"
-        description="ModVisor offers customized training for individuals and corporate teams, <br>focusing on practical financial Modelling skills designed to meet your specific business needs."
+        description="ModVisor’s training boosts your Excel and financial modeling skills with engaging, hands-on learning,<br> focused on delivering real-world results—say goodbye to boring lectures and unlock your full potential!"
       />
       <Trainings />
     </Background>

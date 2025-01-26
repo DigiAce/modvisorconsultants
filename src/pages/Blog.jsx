@@ -1,5 +1,19 @@
-const Blog = () => {
-  return <div className="font-bold text-2xl mx-auto">Blog Coming Soon</div>;
-};
+import Banner from "../components/blog/Banner";
+import BlogCard from "../components/blog/BlogCard";
 
-export default Blog;
+function App() {
+  return (
+    <div className="mx-auto">
+      {/* Banner component */}
+      <Banner />
+
+      {/* BlogCard component already handles blog data mapping */}
+      <div className="blog-cards">
+        <BlogCard />{" "}
+        {/* BlogCard is already mapped dynamically from blogData */}
+      </div>
+    </div>
+  );
+}
+
+export default App;

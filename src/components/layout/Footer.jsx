@@ -1,13 +1,23 @@
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 const Footer = () => {
+  const location = useLocation(); // Hook to get the current location (URL)
+
+  useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <footer className="bg-[#e0f4ff]">
       <div className="container mx-auto p-0 md:p-8 xl:px-0">
         <div className="mx-auto max-w-7xl px-6 pb-10 pt-16">
-          <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="xl:grid xl:grid-cols-3 xl:gap-8 items-start">
             <div className="space-y-4">
               <div>
-                <a href="/">
-                  <div className="flex items-center space-x-2 text-2xl font-medium">
+                <Link to="/">
+                  <div className="flex items-start space-x-2 text-2xl font-medium">
                     <span>
                       <img
                         src="/img/logo-trans.png"
@@ -16,7 +26,7 @@ const Footer = () => {
                       />
                     </span>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="max-w-md pr-16 text-md text-black font-medium">
                 ModVisor (short for Modelling Advisor) is revolutionizing
@@ -26,7 +36,7 @@ const Footer = () => {
               </div>
               <div className="flex space-x-2">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/modvisor-business-consultants/ "
                   target="_blank"
                   className="text-black hover:text-gray-200"
                 >
@@ -48,71 +58,71 @@ const Footer = () => {
             </div>
 
             <div className="mt-16 xl:col-span-2 xl:mt-0">
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-3 gap-8 items-start">
                 <div>
                   <h3 className="text-md font-extrabold leading-6 text-textColor text-xl">
                     Our Services
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/services/modelbuild"
                         className="text-md font-bold leading-6 text-black hover:text-[#ffc541]"
                       >
                         Model Build
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/services/modelreview"
                         className="text-md font-bold leading-6 text-black hover:text-[#ffc541]"
                       >
                         Model Review
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/services/training"
                         className="text-md font-bold leading-6 text-black hover:text-[#ffc541]"
                       >
                         Training
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-md font-extrabold leading-6 text-textColor  text-xl">
+                  <h3 className="text-md font-extrabold leading-6 text-textColor text-xl">
                     About Us
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/team"
                         className="text-md font-bold leading-6 text-black hover:text-[#ffc541]"
                       >
                         Our Team
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/join"
                         className="text-md font-bold leading-6 text-black hover:text-[#ffc541]"
                       >
                         Join Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/blog"
                         className="text-md font-bold leading-6 text-black hover:text-[#ffc541]"
                       >
                         Blog
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-md font-extrabold leading-6 text-textColor  text-xl">
+                  <h3 className="text-md font-extrabold leading-6 text-textColor text-xl">
                     Contact
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
@@ -143,8 +153,8 @@ const Footer = () => {
 
           <div className="mt-16 border-t border-gray-400/30 pt-8 sm:mt-20 lg:mt-24">
             <div className="text-md text-center text-black">
-              © 2025 <span className="font-semibold">ModVisor</span> . All
-              rights reserved. Powered by
+              © 2025 <span className="font-semibold">ModVisor</span>. All rights
+              reserved. Powered by
               <a
                 rel="noopener"
                 href="https://digiace.in/"

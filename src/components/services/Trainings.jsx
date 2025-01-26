@@ -3,6 +3,9 @@ import { HoverEffect } from "../ui/CardEffect";
 export function Trainings() {
   return (
     <div className="max-w-5xl mx-auto px-8">
+      <h2 className="text-2xl font-bold text-[#ffc541] text-center mb-0 mt-14 sm:mt-4">
+        Ready to Level Up Your Financial Modelling Game?
+      </h2>
       <HoverEffect items={projects} />
     </div>
   );

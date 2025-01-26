@@ -9,7 +9,7 @@ const ModelBuild = () => {
       <HeroSection
         id="about"
         title="Model Build"
-        description="We deliver custom, user-friendly models that simplify complex data, ensuring accuracy, <br> flexibility, and actionable insights to drive confident decisions."
+        description="Custom financial models tailored to your unique needs,  ensuring clear, actionable insights <br> for confident and informed decision-making."
       />
       <Build />
     </Background>

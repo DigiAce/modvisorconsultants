@@ -45,9 +45,15 @@ const HeroSection = () => {
             Bespoke Financial Models, <br /> Because Your Business Deserves the
             Best.
           </h1>
-          <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-            Start a conversation
-          </button>
+          <a
+            href="https://wa.link/kjjqfl" // Replace with your number
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+              Start a conversation
+            </button>
+          </a>
         </div>
       </div>
 

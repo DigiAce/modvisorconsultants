@@ -5,13 +5,16 @@ import Home from "./pages/Home"; // Adjust the path to your actual page componen
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/layout/Footer"; // Adjust the import path as needed
-// import Services from "./pages/Services";
 import ModelBuild from "./pages/services/ModelBuild"; // Page for Model Build service
 import ModelReview from "./pages/services/ModelReview"; // Page for Model Review service
 import Training from "./pages/services/Training"; // Page for Training service
 import Team from "./pages/Team"; // Page for "Our Team"
-import Blog from "./pages/Blog"; // Page for Blog
+import Blog from "./pages/Blog";
+// import BlogCard from "./components/blog/BlogCard"; // Blog list component
+import BlogFullPage from "./pages/BlogFullPage"; // Blog full page component
+import Banner from "./components/team/Banner"; // Banner component
 import FloatingButton from "./components/layout/FloatingButton";
+import JoinUs from "./pages/JoinUs";
 
 function App() {
   // Define the routes array, including dropdown items
@@ -28,12 +31,12 @@ function App() {
       ],
     },
     { name: "Our Team", path: "/team" },
-    { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact", icon: HiMail },
+    { name: "join", path: "/join" },
   ];
 
   return (
-    <div className="">
+    <div className="mx-auto">
       <Router>
         {/* Pass routes as a prop to the Navbar component */}
         <Navbar routes={routes} />
@@ -43,21 +46,26 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-section" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/services" element={<Services />} /> */}
-
           {/* Define routes for the "Our services" dropdown */}
           <Route path="/services/modelbuild" element={<ModelBuild />} />
           <Route path="/services/modelreview" element={<ModelReview />} />
           <Route path="/services/training" element={<Training />} />
-
           {/* Define routes for other main menu items */}
           <Route path="/team" element={<Team />} />
+          {/* Routes for the blog */}
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/full/:id" element={<BlogFullPage />} />
+          {/* Full blog post */}
+          {/* Example route for Banner */}
+          <Route path="/team/banner" element={<Banner />} />
+          {/* Example route for carrer */}
+          <Route path="/join" element={<JoinUs />} />
         </Routes>
 
         {/* Footer added here */}
         <Footer />
-        {/*floating button*/}
+
+        {/* Floating button */}
         <FloatingButton />
       </Router>
     </div>

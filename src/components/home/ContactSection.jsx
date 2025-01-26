@@ -25,7 +25,7 @@ const ContactSection = () => {
             </span>
           </div>
           <div className="flex items-center mt-5">
-            <MdEmail className="h-12 w-12 mr-3 text-[#ffc541]" />
+            <MdEmail className="h-6 w-6 mr-3 text-[#ffc541]" />
             <span className="text-sm sm:text-xs">
               devasheesh.pant <br />
               @modvisorbusinessconsultants.com
@@ -33,7 +33,13 @@ const ContactSection = () => {
           </div>
         </div>
         <div className="md:col-span-8 p-10 bg-white">
-          <form className="space-y-6">
+          {/* Formspree Integration */}
+          <form
+            action="https://formspree.io/f/xdkaazva" // Replace with your Formspree URL
+            method="POST"
+            className="space-y-6"
+            target="_blank"
+          >
             <div>
               <label
                 htmlFor="name"
@@ -47,6 +53,7 @@ const ContactSection = () => {
                 name="name"
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                 placeholder="Your Name"
+                required
               />
             </div>
             <div>
@@ -62,6 +69,7 @@ const ContactSection = () => {
                 name="mobile"
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                 placeholder="Your Mobile Number"
+                required
               />
             </div>
             <div>
@@ -69,7 +77,7 @@ const ContactSection = () => {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Email
+                Email <span className="text-red-900 text-xl">*</span>
               </label>
               <input
                 type="email"
@@ -77,6 +85,7 @@ const ContactSection = () => {
                 name="email"
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                 placeholder="Your Email"
+                required
               />
             </div>
             <div>
@@ -92,6 +101,7 @@ const ContactSection = () => {
                 rows="4"
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                 placeholder="Your Message"
+                required
               ></textarea>
             </div>
             <div>

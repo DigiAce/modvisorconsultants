@@ -28,56 +28,123 @@ export function AppleCardsCarouselDemo() {
 const content = {
   "Tailored Financial Models": (
     <div>
-      {/* <h3 className="text-lg font-bold">Tailored Financial Models</h3> */}
-      <p className="text-white text-base md:text-2xl font-sans">
+      {/* <p className="text-white text-base md:text-2xl font-sans">
         Every solution is customized to meet your business&apos;s specific needs
         and objectives.
-      </p>
+      </p> */}
+      <ul className="mt-4 list-disc text-base md:text-2xl font-sans">
+        <li>
+          We customize every financial model to align with your unique business
+          goals and industry needs.
+        </li>
+        <li>
+          Our solutions ensure precision and relevance, addressing your specific
+          challenges and opportunities.
+        </li>
+        <li>
+          From startups to established enterprises, we deliver models that fit
+          your business perfectly.
+        </li>
+      </ul>
     </div>
   ),
   "Seasoned Professionals": (
     <div>
-      {/* <h3 className="text-lg font-bold">Seasoned Professionals</h3> */}
-      <p className="text-white text-base md:text-2xl font-sans">
+      {/* <p className="text-white text-base md:text-2xl font-sans">
         Our team brings years of specialized experience to deliver accurate,
         customized financial models.
-      </p>
+      </p> */}
+      <ul className="mt-4 list-disc text-base md:text-2xl font-sans">
+        <li>
+          Our team consists of experts with extensive experience in financial
+          modeling across industries.
+        </li>
+        <li>
+          We combine technical expertise with strategic insight to deliver
+          actionable results.
+        </li>
+        <li>
+          Every model is rigorously reviewed for accuracy and reliability by
+          seasoned professionals.
+        </li>
+      </ul>
     </div>
   ),
   "Quality Meets Affordability": (
     <div>
-      {/* <h3 className="text-lg font-bold">Quality Meets Affordability</h3> */}
-      <p className="text-white text-base md:text-2xl font-sans">
+      {/* <p className="text-white text-base md:text-2xl font-sans">
         We deliver high-quality financial models at unbeatable prices - making
         premium results accessible without the premium price tag.
-      </p>
+      </p> */}
+      <ul className="mt-4 list-disc text-base md:text-2xl font-sans">
+        <li>
+          Enjoy premium-quality financial models without breaking the bank.
+        </li>
+        <li>
+          We make high-end financial analysis accessible for businesses of all
+          sizes.
+        </li>
+        <li>
+          Transparent pricing ensures you receive exceptional value for your
+          investment.
+        </li>
+      </ul>
     </div>
   ),
   "Clear and Actionable Insights": (
     <div>
-      {/* <h3 className="text-lg font-bold">Clear and Actionable Insights</h3> */}
-      <p className="text-white text-base md:text-2xl font-sans">
+      {/* <p className="text-white text-base md:text-2xl font-sans">
         We make complex data easy to understand, helping you make confident
         decisions.
-      </p>
+      </p> */}
+      <ul className="mt-4 list-disc text-base md:text-2xl font-sans">
+        <li>
+          We simplify complex financial data into easy-to-understand insights.
+        </li>
+        <li>Our models empower you to make informed, confident decisions.</li>
+        <li>
+          Visual dashboards and reports ensure clarity and transparency in every{" "}
+        </li>
+      </ul>
     </div>
   ),
   "Long-Term Partnerships": (
     <div>
-      {/* <h3 className="text-lg font-bold">Long-Term Partnerships</h3> */}
-      <p className="text-white text-base md:text-2xl font-sans">
+      {/* <p className="text-white text-base md:text-2xl font-sans">
         We build lasting relationships, focused on your continued growth and
         success.
-      </p>
+      </p> */}
+      <ul className="mt-4 list-disc text-base md:text-2xl font-sans">
+        <li>We’re committed to your long-term success and business growth.</li>
+        <li>
+          Our approach fosters trust, collaboration, and lasting relationships.
+        </li>
+        <li>
+          Count on us as your reliable partner for financial expertise whenever
+          you need it.
+        </li>
+      </ul>
     </div>
   ),
   "Future-Ready Solutions": (
     <div>
-      {/* <h3 className="text-lg font-bold">Future-Ready Solutions</h3> */}
-      <p className="text-white text-base md:text-2xl font-sans">
+      {/* <p className="text-white text-base md:text-2xl font-sans">
         Our models are designed to drive growth and adapt as your business
         evolves.
-      </p>
+      </p> */}
+      <ul className="mt-4 list-disc text-base md:text-2xl font-sans">
+        <li>
+          Our models are designed to adapt to your business’s evolving needs.
+        </li>
+        <li>
+          We integrate flexibility and scalability to support your growth
+          journey.
+        </li>
+        <li>
+          Stay ahead of the curve with solutions that drive innovation
+          and sustainability.
+        </li>
+      </ul>
     </div>
   ),
 };

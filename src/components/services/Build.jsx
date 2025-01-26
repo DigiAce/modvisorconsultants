@@ -6,7 +6,7 @@ export function Build() {
       <div className="max-w-5xl mx-auto px-4">
         {/* Title Section */}
 
-        <h2 className="text-2xl font-bold text-[#ffc541] text-center mb-0 mt-10">
+        <h2 className="text-2xl font-bold text-[#ffc541] text-center mb-0 mt-14 sm:mt-4">
           Our Expertise in Different Types of Modelling Assignments
         </h2>
 
