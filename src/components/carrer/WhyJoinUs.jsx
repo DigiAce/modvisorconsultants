@@ -29,7 +29,7 @@ const WhyJoinUs = () => {
                   <h3 className="text-xl font-semibold text-white">
                     Innovate with Impact
                   </h3>
-                  <p className="text-white">
+                  <p className="text-yell">
                     Contribute to projects that not only drive business success
                     but also create positive, lasting impacts.
                   </p>
@@ -45,7 +45,7 @@ const WhyJoinUs = () => {
                   ></ion-icon>
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-xl font-semibold text-yell">
                     Learn from the Best
                   </h3>
                   <p className="text-white">
@@ -64,7 +64,7 @@ const WhyJoinUs = () => {
                   ></ion-icon>
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-xl font-semibold text-yell">
                     Endless Growth
                   </h3>
                   <p className="text-white">
@@ -83,7 +83,7 @@ const WhyJoinUs = () => {
                   ></ion-icon>
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold text-white ">
+                  <h3 className="text-xl font-semibold text-yell">
                     Work Your Way
                   </h3>
                   <p className="text-white">
