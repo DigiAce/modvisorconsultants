@@ -26,10 +26,10 @@ const WhyJoinUs = () => {
                   ></ion-icon>
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-xl font-semibold text-yell">
                     Innovate with Impact
                   </h3>
-                  <p className="text-yell">
+                  <p className="text-white">
                     Contribute to projects that not only drive business success
                     but also create positive, lasting impacts.
                   </p>
