@@ -8,7 +8,7 @@ const WhyJoinUs = () => {
           <section className="w-full h-full flex flex-col justify-center md:py-20 py-10 md:px-20 px-2">
             {/* Heading */}
             <div className="w-fit">
-              <h2 className="text-2xl font-bold text-white  pb-2">
+              <h2 className="text-2xl font-bold text-yell  pb-2">
                 Why Join Us? Build Your Future with ModVisor
               </h2>
               <div className="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
