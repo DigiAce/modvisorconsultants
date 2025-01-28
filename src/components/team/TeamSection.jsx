@@ -8,14 +8,14 @@ const teamData = [
       "Mr. Devasheesh Pant is a seasoned financial modeling professional with nearly 14 years of experience. He has led and reviewed complex financial models across industries such as Infrastructure, Transport, Oil & Gas, Renewables, Mini Grid, and BESS.\n\nAs the founder of ModVisor Business Consultants, Devasheesh specializes in Project Finance, Corporate Reporting, Budgeting, and advanced Technical Models like Depot Modeling. His deep analytical acumen ensures accurate and actionable insights, empowering businesses and entrepreneurs to achieve their financial goals with confidence.",
   },
   {
-    imgSrc: "/img/team/2.png", // Replace with actual image path
+    imgSrc: "/img/team/3a.png", // Replace with actual image path
     name: "Dr. Ashok Kumar Pant",
     title: "Director",
     description:
       "Dr. Ashok Kumar Pant, a visionary entrepreneur and co-founder of Modvisor Business Consultants, is a driving force in the business world. With a sharp analytical mind and a passion for innovation, he has consistently inspired aspiring entrepreneurs. His strong leadership and management skills have been instrumental in the growth and success of Modvisor.",
   },
   {
-    imgSrc: "/img/team/3.png", // Replace with actual image path
+    imgSrc: "/img/team/1a.png", // Replace with actual image path
     name: "Mrs. Kanchan Lata Pant",
     title: "Director",
     description:
@@ -36,7 +36,7 @@ const teamData = [
       "Mr. Mouleesh K holds an MBA degree in Finance, with strong analytical and financial modeling skills, and is currently a Financial Analyst at ModVisor. He specializes in building and reviewing complex financial models, ensuring their accuracy and reliability. Additionally, Mouleesh has a talent for transforming raw data into visually appealing dashboards, making financial insights both engaging and easy to understand.",
   },
   {
-    imgSrc: "/img/team/6.png", // Replace with actual image path
+    imgSrc: "/img/team/2a.png", // Replace with actual image path
     name: "Mr. Hem Pandey",
     title: "Manager Accounts",
     description:

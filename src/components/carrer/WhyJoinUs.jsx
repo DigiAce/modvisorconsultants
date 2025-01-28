@@ -8,7 +8,7 @@ const WhyJoinUs = () => {
           <section className="w-full h-full flex flex-col justify-center md:py-20 py-10 md:px-20 px-2">
             {/* Heading */}
             <div className="w-fit">
-              <h2 className="text-2xl font-bold text-yell  pb-2">
+              <h2 className="text-2xl font-bold text-white  pb-2">
                 Why Join Us? Build Your Future with ModVisor
               </h2>
               <div className="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
@@ -26,7 +26,7 @@ const WhyJoinUs = () => {
                   ></ion-icon>
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold text-yell">
+                  <h3 className="text-xl font-semibold text-white">
                     Innovate with Impact
                   </h3>
                   <p className="text-white">
@@ -45,7 +45,7 @@ const WhyJoinUs = () => {
                   ></ion-icon>
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold text-yell">
+                  <h3 className="text-xl font-semibold text-white">
                     Learn from the Best
                   </h3>
                   <p className="text-white">
@@ -64,7 +64,7 @@ const WhyJoinUs = () => {
                   ></ion-icon>
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold text-yell">
+                  <h3 className="text-xl font-semibold text-white">
                     Endless Growth
                   </h3>
                   <p className="text-white">
@@ -83,7 +83,7 @@ const WhyJoinUs = () => {
                   ></ion-icon>
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold text-yell">
+                  <h3 className="text-xl font-semibold text-white ">
                     Work Your Way
                   </h3>
                   <p className="text-white">

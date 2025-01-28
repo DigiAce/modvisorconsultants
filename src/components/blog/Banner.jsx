@@ -5,10 +5,13 @@ const Banner = () => {
         <div className="flex flex-col md:flex-row items-center">
           {/* Text Section */}
           <div className="md:w-1/2 lg:w-2/3">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6 mt-12">
-              Your Guide to Financial Growth and Success
+            <h1 className="text-4xl md:text-4xl lg:text-6xl text-white font-bold mb-6 mt-12">
+              Mastering Financial Modelling:
               <br className="hidden md:block" />
-              <span className="text-textColor"> Behind Our </span> Success.
+              <span className="text-textColor">
+                {" "}
+                Tips, Trends, and Strategies{" "}
+              </span>{" "}
             </h1>
           </div>
 

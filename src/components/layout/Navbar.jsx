@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { FiChevronUp, FiChevronDown } from "react-icons/fi"; // Import icons
+import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false); // Dropdown for "Our services"
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate(); // React Router's navigation hook
-  const location = useLocation(); // Get the current location
+  const navigate = useNavigate();
+  const location = useLocation();
 
+  // Scroll to the section
   const handleScrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -17,22 +18,29 @@ const Navbar = () => {
     }
   };
 
+  // Navigate and scroll to section
   const handleNavigationWithScroll = (path, sectionId) => {
     if (location.pathname === path) {
-      // If already on the target page, scroll directly
       handleScrollToSection(sectionId);
     } else {
-      // Navigate to the target page and include sectionId in state
       navigate(path, { state: { sectionId } });
     }
   };
 
   useEffect(() => {
-    // On route change, check if a sectionId is in the location state
     if (location.state?.sectionId) {
       handleScrollToSection(location.state.sectionId);
     }
   }, [location]);
+
+  // Detect scroll for background color change
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const menuItems = [
     { name: "Home", path: "/" },
@@ -55,22 +63,14 @@ const Navbar = () => {
     { name: "Join Us", path: "/join" },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const handleNavigation = (actionOrPath) => {
-    setIsMenuOpen(false); // Close the mobile menu
-    setIsServicesOpen(false); // Close the dropdown
+    setIsMenuOpen(false);
+    setIsServicesOpen(false);
     if (typeof actionOrPath === "function") {
-      actionOrPath(); // Call the scroll action
+      actionOrPath();
     } else {
-      navigate(actionOrPath); // Navigate to other pages
-      window.scrollTo(0, 0); // Scroll to the top
+      navigate(actionOrPath);
+      window.scrollTo(0, 0);
     }
   };
 
