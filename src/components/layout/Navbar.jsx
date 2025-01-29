@@ -38,7 +38,6 @@ const Navbar = () => {
   }, [location]);
 
   const menuItems = [
-    { name: "Home", path: "/" },
     {
       name: "About",
       path: "/",
@@ -87,11 +86,13 @@ const Navbar = () => {
     >
       <nav className="max-w-4xl xl:max-w-7xl mx-auto px-5 py-3 lg:py-5">
         <div className="flex items-center justify-between">
-          <img
-            src="/img/logo-trans.png"
-            alt="Company Logo"
-            className="h-8 sm:h-12"
-          />
+          <button onClick={() => navigate("/")} className="focus:outline-none">
+            <img
+              src="/img/logo-trans.png"
+              alt="Company Logo"
+              className="h-8 sm:h-12"
+            />
+          </button>
           <div className="hidden lg:flex justify-between items-center w-full">
             <ul className="flex-1 flex justify-center space-x-10 text-base font-bold">
               {menuItems.map((item) =>
