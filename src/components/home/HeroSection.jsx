@@ -1,26 +1,24 @@
-// import { FaTools, FaClipboardCheck, FaGraduationCap } from "react-icons/fa"; // Import relevant icons
-
 const HeroSection = () => {
   const cards = [
     {
-      img: "/img/c1.png", // Replace with your image path
+      img: "/img/c1.png",
       title: "Model Build",
       description:
         "We deliver custom, user-friendly models that simplify complex data, ensuring accuracy, flexibility, and actionable insights to drive confident decisions.",
       link: "services/modelbuild",
     },
     {
-      img: "/img/c2.png", // Replace with your image path
+      img: "/img/c2.png",
       title: "Model Review",
       description:
         "We make financial models accurate, reliable, and easy to use - spotting errors, validating assumptions, and boosting functionality for smarter decisions.",
       link: "services/modelreview",
     },
     {
-      img: "/img/c3.png", // Replace with your image path
+      img: "/img/c3.png",
       title: "Training",
       description:
-        "ModVisor offers customized training for individuals and corporate teams, focusing on Excel and practical Financial Modelling skills designed to meet your specific business needs.",
+        "ModVisor offers customized training for individuals and corporate teams, focusing on <span style='color: #ffc541; font-weight: bold;'>Excel and practical Financial Modelling skills</span> designed to meet your specific business needs.",
       link: "services/training",
     },
   ];
@@ -46,7 +44,7 @@ const HeroSection = () => {
             Best.
           </h1>
           <a
-            href="https://wa.link/kjjqfl" // Replace with your number
+            href="https://wa.link/kjjqfl"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -74,17 +72,17 @@ const HeroSection = () => {
                   src={card.img}
                   alt={card.title}
                   className="w-10 h-10 transition duration-500 group-hover:filter group-hover:brightness-0 group-hover:invert"
-                />{" "}
-                {/* Image with Hover Effect */}
+                />
                 <h2 className="font-bold text-xl sm:text-3xl font-Poppins text-textColor group-hover:text-[#ffc541] duration-500">
                   {card.title}
                 </h2>
               </div>
 
               {/* Card Description */}
-              <p className="mt-2 text-[#000] text-md sm:text-xl group-hover:text-white transition-all group-hover:opacity-[0.8] duration-300">
-                {card.description}
-              </p>
+              <p
+                className="mt-2 text-[#000] text-md sm:text-xl group-hover:text-white transition-all group-hover:opacity-[0.8] duration-300"
+                dangerouslySetInnerHTML={{ __html: card.description }}
+              />
 
               {/* Arrow Link */}
               <a

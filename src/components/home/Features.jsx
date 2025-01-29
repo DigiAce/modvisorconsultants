@@ -52,7 +52,9 @@ const Features = () => {
                   <div className="w-12 h-12 bg-blue-950 text-blue-600 rounded-md flex items-center justify-center text-2xl">
                     {industry.icon}
                   </div>
-                  <h4 className="text-lg font-medium">{industry.title}</h4>
+                  <h4 className="text-[11px] sm:text-lg font-medium">
+                    {industry.title}
+                  </h4>
                 </div>
               ))}
             </div>
